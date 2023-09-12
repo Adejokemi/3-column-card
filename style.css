@@ -75,10 +75,12 @@ body {
 
 
 @media (max-width: 690px) {
+  body{
+    height: 120vh;
+  }
     .container {
       max-width: 100%;
       padding: 20px; 
-      margin-top: 50px;
     }
 
     .grid {
