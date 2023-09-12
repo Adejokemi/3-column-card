@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin: 0;
+}
+
+.container{
+  max-width: 700px;
+}
+.grid{ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.heading-tertiary {
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 0;
+  font-weight: 700;
+  font-family: 'Big Shoulders Display';
+}
+.text{
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 40px;
+}
+.sedans{ 
+  padding: 40px;
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs{ 
+  padding: 40px;
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+  padding: 40px;
+  background-color: hsl(179, 100%, 13%);
+}
+.btn {
+  background-color: hsl(0, 0%, 95%); 
+  padding: 8px 16px; 
+  border: none;
+  border-radius: 20px; 
+  font-size: 15px; 
+  cursor: pointer; 
+}
+.sedans .btn{
+  color: hsl(31, 77%, 52%);
+}
+.suvs .btn{
+  color: hsl(184, 100%, 22%);
+}
+.luxury .btn{
+  color: hsl(179, 100%, 13%);
+}    
+.btn:hover {
+  background-color: hsl(0, 0%, 60%); 
+  color: hsl(0, 0%, 100%); 
+}
+.attribution { 
+  font-size: 11px; 
+  margin-top: 20px;
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width: 690px) {
+    .container {
+      max-width: 100%;
+      padding: 20px; 
+    }
+
+    .grid {
+      grid-template-columns: repeat(1, 1fr); 
+    }
+}
